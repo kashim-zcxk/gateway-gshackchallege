@@ -1,5 +1,11 @@
 zuul:
   routes:
     productos:
-      path: /api/v0/pymes/**/productos/**
-      url: https://pymes-productos-gshackchallege.herokuapp.com
+      path: /api/v0/pymes/*/productos/**
+      url: https://pymes-productos-gshackchallege.herokuapp.com/api/v0/pymes/
+    ordenes:
+      path: /api/v0/pymes/*/ordenes/**
+      url: https://pymes-ordenes-gshackchallege.herokuapp.com/api/v0/pymes/
+    security:
+      path: /api/v0/seguridad/**
+      url: https://security-gshackchallege.herokuapp.com
